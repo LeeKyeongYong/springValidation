@@ -11,9 +11,15 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <html>
 <head>
-  <title>가입결과</title>
+  <title>폼 검증 결과</title>
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
 </head>
 <body>
-되냐?2
+<div id="content">
+  <h3>가입 결과</h3>
+  ${user.name}님이 가입되었습니다. <br /><br />
+  <a href="new">회원 가입 화면으로...</a>
+</div>
+
 </body>
 </html>
