@@ -1,0 +1,11 @@
+@charset "EUC-KR";
+body{font-size:12px; font-family:sans-serif;}
+#content{width:800px; margin:50px auto;}
+#content table{ width:800px; border-collapse:collapse; border:1px solid black;}
+#content table th{padding:5px; border:1px dotted gray; background:#dddddd;}
+#content table td{padding:5px; border:1px dotted gray;}
+.error-text{color:red;}
+.error-border{border:1px solid red;}
+.small{font-size:10px; color:gray;}
+a{text-decoration: none;color: black;}
+img{border: 0px;}
