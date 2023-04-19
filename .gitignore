@@ -23,6 +23,8 @@ local.properties
 /mvnw
 /mvnw.bat
 mvnw.cmd
+HELP.md
+
 
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
@@ -86,7 +88,7 @@ mvnw.cmd
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 .DS_Store
-
+.idea/encodings.xml
 *.idea
 # User-specific stuff
 .idea/**/workspace.xml
