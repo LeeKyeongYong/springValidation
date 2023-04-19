@@ -11,7 +11,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <html>
 <head>
-    <title>가입하기</title>
+  <title>가입결과</title>
 </head>
 <body>
 되냐?2
