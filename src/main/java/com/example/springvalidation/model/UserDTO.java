@@ -1,6 +1,7 @@
 package com.example.springvalidation.model;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 import java.io.Serializable;
 
@@ -20,8 +21,7 @@ public class UserDTO implements Serializable {
         this.email = email;
         this.phone = phone;
     }
-   // @NotBlank(message="{error.user.name}")
-
+    @NotBlank(message="{error.user.name}")
     public String getName() {
         return name;
     }
@@ -30,6 +30,8 @@ public class UserDTO implements Serializable {
         this.name = name;
     }
 
+    @NotBlank(message="{error.user.empty}")
+    @Size(min=8,max=20,message = "{error.user.password}")
     public String getPassword() {
         return password;
     }
@@ -37,7 +39,7 @@ public class UserDTO implements Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
-
+@NotBlank(message = "{error.user.email}")
     public String getEmail() {
         return email;
     }
@@ -46,6 +48,7 @@ public class UserDTO implements Serializable {
         this.email = email;
     }
 
+@NotBlank(message="{error.user.phone}")
     public String getPhone() {
         return phone;
     }
