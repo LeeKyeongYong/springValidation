@@ -3,6 +3,7 @@
 
 ### Eclipse ###
 *.idea
+*.iml
 .metadata
 .classpath
 .project
