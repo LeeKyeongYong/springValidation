@@ -43,13 +43,7 @@
 
 <br/>
 
-## 2.출처 <br/>
- https://openai.com/blog/introducing-chatgpt-and-whisper-apis<br/>
- https://dev-pengun.tistory.com/entry/Spring-Boot-CORS-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0<br/>
-﻿https://www.youtube.com/watch?v=rdWavi2M2HE&t=327s<br/>   
-
-<br/><br/>
-## 3. 완료일 : 2022년 09월 22일 <br/>
+## 2. 완료일 : 2022년 09월 22일 <br/>
 https://blog.naver.com/sleekydz86/222881686248
 <br/><br/>
 ###################################################<br/>
