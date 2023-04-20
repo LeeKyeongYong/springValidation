@@ -26,14 +26,15 @@ public class MainController {
         return "index";
     }
 
-    @PostMapping("/result")
-    public String registerUser(@ModelAttribute("user") UserDTO user, BindingResult bindingResult, Model model) {
-        userValidator.validate(user, bindingResult);
-        if (bindingResult.hasErrors()) {
-            return "index";
-        } else {
-            model.addAttribute("user", user);
-            return "result";
+        @PostMapping("/result")
+        public String result(@ModelAttribute("user") UserDTO user, BindingResult bindingResult, Model model) {
+           userValidator.validate(user, bindingResult);
+            if (bindingResult.hasErrors()) {
+                model.addAllAttributes(bindingResult.getModel());
+                return "index";
+            } else {
+                model.addAttribute("user", user);
+                return "result";
+            }
         }
     }
-}
