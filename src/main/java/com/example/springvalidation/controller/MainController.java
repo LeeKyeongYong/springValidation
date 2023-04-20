@@ -30,7 +30,8 @@ public class MainController {
     }
 
     @RequestMapping(value = "result", method = RequestMethod.POST)
-        public String result(@Valid @ModelAttribute("user") UserDTO user, BindingResult bindingResult, Model model) {
+        public String result(@ModelAttribute("user") UserDTO user, BindingResult bindingResult, Model model) {
+        //public String result(@Valid @ModelAttribute("user") UserDTO user, BindingResult bindingResult, Model model) {
            userValidator.validate(user, bindingResult);
             if (bindingResult.hasErrors()) {
                 model.addAllAttributes(bindingResult.getModel());
