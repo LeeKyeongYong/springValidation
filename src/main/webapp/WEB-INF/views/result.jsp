@@ -18,7 +18,7 @@
 <div id="content">
   <h3>가입 결과</h3>
   ${user.name}님이 가입되었습니다. <br /><br />
-  <a href="new">회원 가입 화면으로...</a>
+  <a href="index">회원 가입 화면으로...</a>
 </div>
 
 </body>

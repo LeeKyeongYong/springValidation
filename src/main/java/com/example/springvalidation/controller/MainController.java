@@ -10,16 +10,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class MainController {
-    @RequestMapping(value = {"/", "new"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/", "index"}, method = RequestMethod.GET)
     public String enroll(Model model) {
-        UserDTO user=new UserDTO();
-        model.addAttribute("user",user);
+        UserDTO user = new UserDTO();
+        model.addAttribute("user", user);
         return "index";
     }
 
-    @RequestMapping(value="result",method=RequestMethod.POST)
-    public String result(@Valid UserDTO user, BindingResult bindingResult,Model model){
-        if(bindingResult.hasErrors()){
+    @RequestMapping(value = "result", method = RequestMethod.POST)
+    public String result(@Valid UserDTO user, BindingResult bindingResult, Model model) {
+        //userValidator.validate(user, bindingResult);
+
+        if(bindingResult.hasErrors()) {
             model.addAllAttributes(bindingResult.getModel());
             return "index";
         } else {
